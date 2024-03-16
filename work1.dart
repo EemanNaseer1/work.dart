@@ -24,4 +24,12 @@ void main() {
   } else {
     print("$input is aspecial character");
   }
+
+  int year1 = 2016;
+
+  if ((year1 % 4 == 0 && year1 % 100 != 0) || (year1 % 400 == 0)) {
+    print("$year1 is a leap year");
+  } else {
+    print("$year1 is not a leap year");
+  }
 }
