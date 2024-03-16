@@ -35,4 +35,10 @@ void main() {
   print(day);
   day.removeLast();
   print(day);
+
+  List num = [8, 5, 4, 3, 9];
+  num.sort();
+  print(num);
+  print(num.elementAt(0));
+  print(num.elementAt(4));
 }
