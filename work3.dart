@@ -35,8 +35,4 @@ void main() {
     20
   ];
   print(num);
-
-  List numbers = [2, 5, 6, 3, 1, 3, 8, 2];
-  numbers.sort();
-  print(numbers);
 }
