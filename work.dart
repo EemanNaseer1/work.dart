@@ -51,16 +51,14 @@ void main() {
   };
   print(personIfo["age"]);
 
-  var world = {
+  Map world = {
     "countries": [
       {
         "pakistan": {
           "currency": "rupees",
           "capitalCity": "Islamabad",
           "language": "urdu"
-        }
-      },
-      {
+        },
         "america": {
           "currency": "dollar",
           "capitalcity": "Washington",
@@ -69,5 +67,36 @@ void main() {
       }
     ]
   };
-  print(world["countries"]);
+  print(world.containsKey("countries"));
+
+  Map<String, double> expenses = {
+    'sun': 3000.0,
+    'mon': 3000.0,
+    'tue': 3234.0,
+  };
+  expenses.putIfAbsent('fri', () => 5000.0);
+  print(expenses);
+
+  List<Map> usersEligibility = [
+    {'name': 'John', 'eligible': true},
+    {'name': 'Alice', 'eligible': false},
+    {'name': 'Mike', 'eligible': true},
+    {'name': 'Sarah', 'eligible': true},
+    {'name': 'Tom', 'eligible': false},
+  ];
+  usersEligibility.removeWhere((user) => user['eligible'] == false);
+  print(usersEligibility);
+
+  var numbers = [3, 6, 8, 1, 2, 9, 4];
+  numbers.sort();
+  print(numbers.elementAt(6));
+
+  var originalList = [5, 7, 2, 5, 0, 7, 2];
+  var newList = Set<int>();
+  List<int> uniquelist = originalList.where((num) => newList.add(num)).toList();
+  print(uniquelist);
+
+  List<String> original = ["mango", "water melon", "apple", "grapes", "banana"];
+  print(original.reversed);
+  print("Original List: $original");
 }
