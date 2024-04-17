@@ -1,7 +1,9 @@
-void main() {
+main() {
+  //Q.1
   List names = ["eeman", "mariyam", "aiman", "sabahat", "fariha"];
   print(names);
 
+  //Q.2
   var days = [];
   days.add("Monday");
   days.add("Tuesday");
@@ -12,6 +14,7 @@ void main() {
   days.add("sunday");
   print(days);
 
+  //Q.3
   List day = [
     "monday",
     "tuesday",
@@ -36,12 +39,14 @@ void main() {
   day.removeLast();
   print(day);
 
+  //Q.4
   List num = [8, 5, 4, 3, 9];
   num.sort();
   print(num);
   print(num.elementAt(0));
   print(num.elementAt(4));
 
+  //Q.5
   Map personIfo = {
     "name": "Mariyam",
     "number": 967978540,
@@ -51,6 +56,7 @@ void main() {
   };
   print(personIfo["age"]);
 
+  //Q.6
   Map world = {
     "countries": [
       {
@@ -69,6 +75,7 @@ void main() {
   };
   print(world.containsKey("countries"));
 
+  //Q.7
   Map<String, double> expenses = {
     'sun': 3000.0,
     'mon': 3000.0,
@@ -77,6 +84,7 @@ void main() {
   expenses.putIfAbsent('fri', () => 5000.0);
   print(expenses);
 
+  //Q.8
   List<Map> usersEligibility = [
     {'name': 'John', 'eligible': true},
     {'name': 'Alice', 'eligible': false},
@@ -87,16 +95,31 @@ void main() {
   usersEligibility.removeWhere((user) => user['eligible'] == false);
   print(usersEligibility);
 
+  //Q.9
   var numbers = [3, 6, 8, 1, 2, 9, 4];
   numbers.sort();
   print(numbers.elementAt(6));
 
+  //Q.10
   var originalList = [5, 7, 2, 5, 0, 7, 2];
   var newList = Set<int>();
   List<int> uniquelist = originalList.where((num) => newList.add(num)).toList();
   print(uniquelist);
 
+  //Q.12
   List<String> original = ["mango", "water melon", "apple", "grapes", "banana"];
   print(original.reversed);
   print("Original List: $original");
+
+//Q.13
+  var theList = [1, 2, 2, 3, 4, 5, 5, 6, 7];
+  var myList = Set<int>();
+  List<int> elementlist = theList.where((num) => myList.add(num)).toList();
+  print(elementlist);
+
+  //Q.14
+  var myList1 = [3, 7, 9, 2, 5, 1, 6, 4, 8];
+  (myList1.sort());
+  print(myList1);
+  print(myList1);
 }
