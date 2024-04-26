@@ -73,7 +73,7 @@ main() {
       }
     ]
   };
-  print(world.containsKey("countries"));
+  print(world["countries"][0]["pakistan"]);
 
   //Q.7
   Map<String, double> expenses = {
@@ -106,6 +106,11 @@ main() {
   List<int> uniquelist = originalList.where((num) => newList.add(num)).toList();
   print(uniquelist);
 
+  //Q.11
+  List number1 = [1, 2, 3, 4, 5, 6, 7, 8];
+  List number2 = number1;
+  print(number2.first);
+
   //Q.12
   List<String> original = ["mango", "water melon", "apple", "grapes", "banana"];
   print(original.reversed);
@@ -119,7 +124,9 @@ main() {
 
   //Q.14
   var myList1 = [3, 7, 9, 2, 5, 1, 6, 4, 8];
-  (myList1.sort());
-  print(myList1);
-  print(myList1);
+  var newlist = myList1;
+  (newlist.sort());
+  print(newlist);
+
+  //Q.15
 }
