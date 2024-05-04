@@ -1,12 +1,44 @@
 void main() {
-  //Q.1
-  for (int i = 0; i < 10; i++) {
-    print("Fibonacci sequence upto 10: ${i - 1}");
-  }
+  List names = ["Ali", "Uzma", "Aliza", "Fariha"];
+  print(names);
 
-  //Q.2
-  List number = [3, 9, 1, 6, 4, 2, 8, 5, 7];
-  for (int i = 1; i >= 9; ++i) {
-    print(number[i]);
-  }
+  var days = [];
+  days.add("Monday");
+  days.add("Tuesday");
+  days.add("Wednesday");
+  days.add("Thursday");
+  days.add("Friday");
+  days.add("Saturday");
+  days.add("sunday");
+  print(days);
+
+  List day = [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday"
+  ];
+  day.removeLast();
+  print(day);
+  day.removeLast();
+  print(day);
+  day.removeLast();
+  print(day);
+  day.removeLast();
+  print(day);
+  day.removeLast();
+  print(day);
+  day.removeLast();
+  print(day);
+  day.removeLast();
+  print(day);
+
+  List num = [8, 5, 4, 3, 9];
+  num.sort();
+  print(num);
+  print(num.elementAt(0));
+  print(num.elementAt(4));
 }

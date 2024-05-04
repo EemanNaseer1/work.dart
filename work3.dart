@@ -1,38 +1,35 @@
 void main() {
-  List<String> favoriteFruit = [
-    "orange",
-    "banana",
-    "apple",
-    "strawberry",
-    "watermelon",
-    "kiwi",
-    "mango"
-  ];
+  print("learing flutter");
 
-  favoriteFruit.sort();
-  print(favoriteFruit);
+  int num = 23;
 
-  List num = [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20
-  ];
-  print(num);
+  if (num > 0) {
+    print("It is a positive number");
+  } else if (num < 0) {
+    print("It is a negative number");
+  } else {
+    print("It is a zero number");
+  }
+
+  var input = "d";
+
+  if ((input.codeUnitAt(0) >= 'A'.codeUnitAt(0) &&
+          input.codeUnitAt(0) <= 'Z'.codeUnitAt(0)) ||
+      (input.codeUnitAt(0) >= 'a'.codeUnitAt(0) &&
+          input.codeUnitAt(0) <= 'z'.codeUnitAt(0))) {
+    print("$input is a letter");
+  } else if (input.codeUnitAt(0) >= '0'.codeUnitAt(0) &&
+      input.codeUnitAt(0) <= '9'.codeUnitAt(0)) {
+    print("$input is a number");
+  } else {
+    print("$input is aspecial character");
+  }
+
+  int year1 = 2016;
+
+  if ((year1 % 4 == 0 && year1 % 100 != 0) || (year1 % 400 == 0)) {
+    print("$year1 is a leap year");
+  } else {
+    print("$year1 is not a leap year");
+  }
 }
